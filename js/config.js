@@ -189,13 +189,38 @@ const SITE_CONFIG = {
   //    attributed reviews. Never invent names, quotes or ratings. When empty,
   //    the site shows a "Read our reviews on Google" link instead.
   // ==========================================================================
+  //
+  // HOW TO ADD A REVIEW:
+  //   1. Copy one TEMPLATE block below (everything between the { and }).
+  //   2. Paste it inside the [ ] and REMOVE the leading "// " from each line.
+  //   3. Replace the placeholder text with the guest's real words.
+  //   4. Save. The "Guest Reviews" section appears automatically once at
+  //      least one real review is added; until then a "Read our reviews on
+  //      Google" button is shown instead.
+  //
+  //   Fields:  name   = guest's name, exactly as they wrote it (required)
+  //            text   = their review, unedited (required)
+  //            rating = whole number 1–5 (optional; shows star icons)
+  //            source = where it's from, e.g. "Google Reviews" (optional)
+  //            date   = roughly when, e.g. "August 2026" (optional)
+  //
+  //   Only paste genuine, attributed reviews. Never invent names or quotes.
+  //
   reviews: [
+    // ---- TEMPLATE: copy this block, uncomment it, and fill in real details ----
     // {
-    //   name: "Guest Name",
-    //   text: "Their actual review text, unedited.",
+    //   name: "Full Name",
+    //   text: "Paste the guest's exact review text here.",
     //   rating: 5,
     //   source: "Google Reviews",
-    //   date: "March 2026",
+    //   date: "Month Year",
+    // },
+    // {
+    //   name: "Full Name",
+    //   text: "Paste the guest's exact review text here.",
+    //   rating: 5,
+    //   source: "Google Reviews",
+    //   date: "Month Year",
     // },
   ],
 
