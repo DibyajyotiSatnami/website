@@ -236,7 +236,7 @@ const SITE_CONFIG = {
     { id: "parking",      question: "Is parking available?",                     answer: null },
     { id: "meals",        question: "Are meals included or available?",          answer: null },
     { id: "pets",         question: "Are pets allowed?",                         answer: null },
-    { id: "cancellation", question: "What is the cancellation policy?",          answer: null },
+    { id: "cancellation", question: "What is the cancellation policy?",          answer: "Free cancellation up to 48 hours before your check-in time. For cancellations within 48 hours of check-in (or in case of a no-show), one night's charge applies. We'll confirm the exact details with you when your booking is confirmed." },
   ],
 
   // ==========================================================================
