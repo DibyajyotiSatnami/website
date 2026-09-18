@@ -32,7 +32,7 @@ const SITE_CONFIG = {
   // ==========================================================================
   contact: {
     whatsapp: "918133913152",  // international digits only (91 = India country code)
-    phone: null,             // display + dial, e.g. "+91 98765 43210"
+    phone: "+91 81339 13152",  // display + dial format
     email: null,             // e.g. "stay@brillianthomestay.in"
   },
 
