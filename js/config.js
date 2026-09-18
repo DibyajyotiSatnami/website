@@ -147,15 +147,17 @@ const SITE_CONFIG = {
   //    The whole section stays hidden until at least one is added.
   // ==========================================================================
   amenities: [
-    // Uncomment / edit only the ones that are actually true for your property:
-    // { label: "Free WiFi", icon: "wifi" },
-    // { label: "Air Conditioning", icon: "ac" },
-    // { label: "Hot Water", icon: "hotWater" },
-    // { label: "Housekeeping", icon: "housekeeping" },
-    // { label: "Parking", icon: "parking" },
-    // { label: "Family Friendly", icon: "familyFriendly" },
-    // { label: "Celebration Setups", icon: "celebration" },
-    // { label: "24/7 Access", icon: "security" },
+    { label: "Free WiFi", icon: "wifi" },
+    { label: "Air Conditioning", icon: "ac" },
+    { label: "TV", icon: "tv" },
+    { label: "Hot Water", icon: "hotWater" },
+    { label: "Housekeeping", icon: "housekeeping" },
+    { label: "Parking", icon: "parking" },
+    { label: "Family Friendly", icon: "familyFriendly" },
+    { label: "Pets Allowed", icon: "pets" },
+    { label: "Workspace / Desk", icon: "workspace" },
+    { label: "24/7 Access & Security", icon: "security" },
+    { label: "Celebration Setups", icon: "celebration" },
   ],
 
   // ==========================================================================
@@ -233,9 +235,9 @@ const SITE_CONFIG = {
     { id: "check-in-out", question: "What are the check-in and check-out times?", answer: "Check-in is from 2:00 PM and check-out is by 11:00 AM. If you need an early check-in or late check-out, let us know in your enquiry and we'll do our best to accommodate, subject to availability." },
     { id: "booking",      question: "How do I confirm a booking?",               answer: "Send us a booking request through this website (or WhatsApp us directly). We'll reply to confirm availability, share the total price, and tell you how to secure the dates. Your stay is confirmed only once we confirm it back to you." },
     { id: "celebrations", question: "Can you arrange celebration or occasion setups?", answer: "Yes — decoration setups (such as birthday arrangements) can be arranged on request. Mention it in your enquiry and we'll share the options and any charges." },
-    { id: "parking",      question: "Is parking available?",                     answer: null },
+    { id: "parking",      question: "Is parking available?",                     answer: "Yes, parking is available for guests. If you're arriving by car, mention it in your enquiry so we can guide you." },
     { id: "meals",        question: "Are meals included or available?",          answer: null },
-    { id: "pets",         question: "Are pets allowed?",                         answer: null },
+    { id: "pets",         question: "Are pets allowed?",                         answer: "Yes, pets are welcome. Please let us know in advance in your enquiry so we can prepare for your stay." },
     { id: "cancellation", question: "What is the cancellation policy?",          answer: "Free cancellation up to 48 hours before your check-in time. For cancellations within 48 hours of check-in (or in case of a no-show), one night's charge applies. We'll confirm the exact details with you when your booking is confirmed." },
   ],
 
