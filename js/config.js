@@ -31,7 +31,7 @@ const SITE_CONFIG = {
   //    rather than a broken/fake link.
   // ==========================================================================
   contact: {
-    whatsapp: null,          // e.g. "919876543210"   ← ADD THIS FIRST
+    whatsapp: "918133913152",  // international digits only (91 = India country code)
     phone: null,             // display + dial, e.g. "+91 98765 43210"
     email: null,             // e.g. "stay@brillianthomestay.in"
   },
