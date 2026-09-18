@@ -3,7 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - claude/dental-website-design-nh9x4z
+      - claude/keen-sagan-fl8pn9
+      - main
   workflow_dispatch:
 
 permissions:

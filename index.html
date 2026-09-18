@@ -4,22 +4,22 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Brilliant Homestay | Boutique Homestay in Guwahati, Assam</title>
-<meta name="description" content="Brilliant Homestay in Guwahati, Assam — a warm, boutique homestay. Enquire directly by WhatsApp or phone to check availability and plan your stay." />
+<meta name="description" content="Brilliant Homestay in Guwahati, Assam — a warm, boutique homestay with freshly styled rooms and celebration setups on request. Enquire directly by WhatsApp to check availability and plan your stay." />
 <meta name="theme-color" content="#1F3A2E" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Brilliant Homestay" />
 <meta property="og:title" content="Brilliant Homestay | Guwahati, Assam" />
-<meta property="og:description" content="A warm, boutique homestay in Guwahati, Assam. Enquire directly by WhatsApp or phone to plan your stay." />
-<meta property="og:image" content="images/social/og-banner.svg" />
+<meta property="og:description" content="A warm, boutique homestay in Guwahati, Assam. Enquire directly by WhatsApp to plan your stay." />
+<meta property="og:image" content="images/gallery/room-brown-suite.jpg" />
 <meta property="og:locale" content="en_IN" />
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Brilliant Homestay | Guwahati, Assam" />
-<meta name="twitter:description" content="A warm, boutique homestay in Guwahati, Assam. Enquire directly by WhatsApp or phone to plan your stay." />
-<meta name="twitter:image" content="images/social/og-banner.svg" />
+<meta name="twitter:description" content="A warm, boutique homestay in Guwahati, Assam. Enquire directly by WhatsApp to plan your stay." />
+<meta name="twitter:image" content="images/gallery/room-brown-suite.jpg" />
 
 <link rel="icon" href="images/social/favicon.svg" type="image/svg+xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,23 +34,24 @@
 <!-- ============================= HEADER ============================= -->
 <header class="site-header" id="site-header">
   <div class="container header-inner">
-    <a href="#home" class="wordmark">
+    <a href="#home" class="wordmark" aria-label="Brilliant Homestay, home">
       <span class="wordmark-main">Brilliant Homestay</span>
       <span class="wordmark-sub">Guwahati, Assam</span>
     </a>
 
     <nav class="main-nav" id="main-nav" aria-label="Primary">
       <ul class="nav-links">
-        <li><a href="#home" data-nav="home">Home</a></li>
-        <li><a href="#stay" data-nav="stay">Stay</a></li>
-        <li><a href="#gallery" data-nav="gallery">Gallery</a></li>
-        <li><a href="#location" data-nav="location">Location</a></li>
-        <li><a href="#contact" data-nav="contact">Contact</a></li>
+        <li><a href="#home" data-nav-for="home">Home</a></li>
+        <li><a href="#stay" data-nav-for="stay">Stay</a></li>
+        <li><a href="#amenities" data-nav-for="amenities">Amenities</a></li>
+        <li><a href="#gallery" data-nav-for="gallery">Gallery</a></li>
+        <li><a href="#location" data-nav-for="location">Location</a></li>
+        <li><a href="#contact" data-nav-for="contact">Contact</a></li>
       </ul>
     </nav>
 
     <div class="header-actions">
-      <a href="#contact" class="btn btn-primary" data-cta="primary" data-cta-slot="header">Enquire About Your Stay</a>
+      <a href="#contact" class="btn btn-primary" data-cta="whatsapp" data-cta-slot="header">Enquire on WhatsApp</a>
       <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
         <span></span><span></span><span></span>
       </button>
@@ -60,13 +61,14 @@
   <!-- Mobile menu -->
   <div class="mobile-menu" id="mobile-menu" hidden>
     <ul class="mobile-nav-links">
-      <li><a href="#home" data-nav="home">Home</a></li>
-      <li><a href="#stay" data-nav="stay">Stay</a></li>
-      <li><a href="#gallery" data-nav="gallery">Gallery</a></li>
-      <li><a href="#location" data-nav="location">Location</a></li>
-      <li><a href="#contact" data-nav="contact">Contact</a></li>
+      <li><a href="#home" data-nav-for="home">Home</a></li>
+      <li><a href="#stay" data-nav-for="stay">Stay</a></li>
+      <li><a href="#amenities" data-nav-for="amenities">Amenities</a></li>
+      <li><a href="#gallery" data-nav-for="gallery">Gallery</a></li>
+      <li><a href="#location" data-nav-for="location">Location</a></li>
+      <li><a href="#contact" data-nav-for="contact">Contact</a></li>
     </ul>
-    <a href="#contact" class="btn btn-primary btn-block" data-cta="primary" data-cta-slot="mobile-menu">Enquire About Your Stay</a>
+    <a href="#contact" class="btn btn-primary btn-block" data-cta="whatsapp" data-cta-slot="mobile-menu">Enquire on WhatsApp</a>
   </div>
 </header>
 
@@ -74,28 +76,29 @@
 
   <!-- ============================= HERO ============================= -->
   <section class="hero" id="home">
-    <div class="hero-media">
-      <div class="img-placeholder" data-placeholder-category="Exterior" data-placeholder-label="Brilliant Homestay — Exterior">
+    <div class="hero-media" id="hero-media">
+      <div class="img-placeholder" data-placeholder-category="Rooms" data-placeholder-label="Brilliant Homestay">
         <svg class="placeholder-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 4l9 6.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>
-        <span class="placeholder-text">Exterior photograph coming soon</span>
+        <span class="placeholder-text">Photograph coming soon</span>
       </div>
+      <div class="hero-scrim" aria-hidden="true"></div>
     </div>
 
     <div class="container hero-content-wrap">
-      <div class="hero-content">
-        <p class="eyebrow">Brilliant Homestay &middot; Guwahati, Assam</p>
-        <h1>A warm welcome.<br>A stay to remember.</h1>
-        <p class="hero-lead">Discover Brilliant Homestay in Guwahati, Assam. Get in touch to plan your stay.</p>
+      <div class="hero-content reveal">
+        <p class="eyebrow eyebrow-light">Brilliant Homestay &middot; Guwahati, Assam</p>
+        <h1>A welcoming stay<br>in Guwahati.</h1>
+        <p class="hero-lead">Freshly styled, comfortable rooms with warm, direct hosting — and celebration setups on request. Tell us your dates and we'll help you plan the perfect stay.</p>
 
         <div class="hero-cta">
-          <a href="#contact" class="btn btn-primary btn-lg" data-cta="primary" data-cta-slot="hero">Enquire on WhatsApp</a>
-          <a href="#stay" class="btn btn-outline btn-lg">Explore the Stay</a>
+          <a href="#contact" class="btn btn-primary btn-lg" data-scroll="#contact">Plan Your Stay</a>
+          <a href="#contact" class="btn btn-ghost btn-lg" data-cta="whatsapp" data-cta-slot="hero">Enquire on WhatsApp</a>
         </div>
       </div>
 
-      <!-- Compact enquiry panel -->
-      <form class="enquiry-panel" id="hero-enquiry-form" novalidate aria-labelledby="hero-enquiry-heading">
-        <h2 id="hero-enquiry-heading" class="enquiry-panel-title">Enquire About Availability</h2>
+      <!-- Compact stay-enquiry panel -->
+      <form class="enquiry-panel reveal" id="hero-enquiry-form" novalidate aria-labelledby="hero-enquiry-heading">
+        <h2 id="hero-enquiry-heading" class="enquiry-panel-title">Check availability</h2>
         <div class="enquiry-grid">
           <div class="field">
             <label for="hero-checkin">Check-in</label>
@@ -107,30 +110,34 @@
           </div>
           <div class="field field-guests">
             <label for="hero-guests">Guests</label>
-            <input type="number" id="hero-guests" name="guests" min="1" max="20" value="2" required />
+            <input type="number" id="hero-guests" name="guests" min="1" max="20" value="2" inputmode="numeric" required />
           </div>
         </div>
         <p class="field-error" id="hero-enquiry-error" role="alert" hidden></p>
-        <button type="submit" class="btn btn-primary btn-block">Enquire About Availability</button>
-        <p class="enquiry-note">This checks availability directly with the property — it is not an instant booking.</p>
+        <button type="submit" class="btn btn-primary btn-block">Enquire on WhatsApp</button>
+        <p class="enquiry-note">This sends a quick availability enquiry — it is not an instant booking.</p>
       </form>
     </div>
   </section>
 
-  <!-- ============================= INTRODUCTION ============================= -->
+  <!-- ============================= ABOUT ============================= -->
   <section class="section intro-section" id="welcome">
     <div class="container intro-grid">
-      <div class="intro-media">
-        <div class="img-placeholder img-placeholder--tall" data-placeholder-category="Common Areas" data-placeholder-label="Common Area">
+      <div class="intro-media reveal">
+        <div class="img-placeholder img-placeholder--tall" id="about-media" data-placeholder-category="Common Areas" data-placeholder-label="Brilliant Homestay">
           <svg class="placeholder-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H4zM2 20h20M9 8h6M9 11h6"/></svg>
-          <span class="placeholder-text">Common area photograph coming soon</span>
+          <span class="placeholder-text">Photograph coming soon</span>
         </div>
       </div>
-      <div class="intro-text">
+      <div class="intro-text reveal">
         <p class="eyebrow">Welcome</p>
         <h2>Welcome to Brilliant Homestay.</h2>
-        <p class="intro-body" id="intro-body">Brilliant Homestay offers a comfortable, homely stay in Guwahati, Assam.</p>
-        <a href="#contact" class="btn btn-outline" data-cta="secondary" data-cta-slot="intro">Enquire About Your Stay</a>
+        <p class="intro-body" id="intro-body"></p>
+        <ul class="highlight-chips" id="highlight-chips" hidden></ul>
+        <div class="intro-actions">
+          <a href="#contact" class="btn btn-primary" data-scroll="#contact">Plan Your Stay</a>
+          <a href="#stay" class="btn btn-outline" data-scroll="#stay">See the Rooms</a>
+        </div>
       </div>
     </div>
   </section>
@@ -138,17 +145,25 @@
   <!-- ============================= ACCOMMODATION ============================= -->
   <section class="section stay-section" id="stay">
     <div class="container">
-      <div class="section-heading">
+      <div class="section-heading reveal">
         <p class="eyebrow">Stay</p>
-        <h2>Rooms at Brilliant Homestay</h2>
+        <h2>Our rooms</h2>
+        <p class="section-sub" id="stay-sub"></p>
       </div>
 
-      <div id="rooms-grid" class="rooms-grid"></div>
+      <!-- Confirmed room categories render here (when configured) -->
+      <div id="rooms-grid" class="rooms-grid" hidden></div>
 
-      <!-- Fallback shown while no verified room types are configured -->
-      <div id="rooms-fallback" class="rooms-fallback">
-        <p>Room details are being finalised. Enquire directly and we'll share what's available for your dates.</p>
-        <a href="#contact" class="btn btn-primary" data-cta="primary" data-cta-slot="rooms-fallback">Enquire About Rooms</a>
+      <!-- General accommodation strip (real photos, no invented categories) -->
+      <div id="rooms-general" class="rooms-general">
+        <div class="rooms-general-media" id="rooms-general-media"></div>
+        <div class="rooms-general-cta reveal">
+          <p>Room categories and rates are shared on enquiry, so we can match you to the right space for your dates and group.</p>
+          <div class="rooms-general-actions">
+            <a href="#contact" class="btn btn-primary" data-scroll="#contact">Request a Booking</a>
+            <a href="#contact" class="btn btn-outline" data-cta="whatsapp" data-cta-slot="rooms">Ask on WhatsApp</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -156,7 +171,7 @@
   <!-- ============================= AMENITIES ============================= -->
   <section class="section amenities-section" id="amenities" hidden>
     <div class="container">
-      <div class="section-heading">
+      <div class="section-heading reveal">
         <p class="eyebrow">Amenities</p>
         <h2>What's on offer</h2>
       </div>
@@ -167,10 +182,10 @@
   <!-- ============================= GALLERY ============================= -->
   <section class="section gallery-section" id="gallery">
     <div class="container">
-      <div class="section-heading">
+      <div class="section-heading reveal">
         <p class="eyebrow">Gallery</p>
         <h2>A glimpse of Brilliant Homestay</h2>
-        <p class="section-sub">Photographs are being added — the categories below reserve their place so you can picture your stay.</p>
+        <p class="section-sub">Real photographs of the rooms and setups. More categories are added as they're photographed.</p>
       </div>
 
       <div class="gallery-filters" id="gallery-filters" role="tablist" aria-label="Filter gallery by category"></div>
@@ -190,11 +205,11 @@
   <!-- ============================= LOCATION ============================= -->
   <section class="section location-section" id="location">
     <div class="container location-grid">
-      <div class="location-text">
+      <div class="location-text reveal">
         <p class="eyebrow">Location</p>
         <h2>Find us in Guwahati.</h2>
         <p id="location-address" class="location-address" hidden></p>
-        <p class="location-fallback" id="location-fallback">Guwahati, Assam, India — the full address will appear here once confirmed. Use the map link below for precise directions.</p>
+        <p class="location-fallback" id="location-fallback">Guwahati, Assam, India. Use the map and the “Get Directions” link below for precise navigation to Brilliant Homestay.</p>
 
         <ul class="location-landmarks" id="location-landmarks" hidden></ul>
 
@@ -203,96 +218,170 @@
           <a id="location-maps-view" href="#" target="_blank" rel="noopener" class="btn btn-outline">View on Google Maps</a>
         </div>
       </div>
-      <div class="location-map">
-        <iframe id="location-embed" title="Brilliant Homestay location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src=""></iframe>
+      <div class="location-map reveal">
+        <iframe id="location-embed" title="Brilliant Homestay location on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src=""></iframe>
       </div>
     </div>
   </section>
 
   <!-- ============================= REVIEWS ============================= -->
-  <section class="section reviews-section" id="reviews" hidden>
+  <section class="section reviews-section" id="reviews">
     <div class="container">
-      <div class="section-heading">
+      <div class="section-heading reveal">
         <p class="eyebrow">Guest Reviews</p>
         <h2>What guests are saying</h2>
       </div>
       <div id="reviews-grid" class="reviews-grid"></div>
+      <!-- Shown when no reviews are configured yet -->
+      <div id="reviews-fallback" class="reviews-fallback reveal">
+        <p>We're gathering guest reviews here. In the meantime, you can read verified reviews on our Google listing.</p>
+        <a id="reviews-google-link" href="#" target="_blank" rel="noopener" class="btn btn-outline">Read our reviews on Google</a>
+      </div>
     </div>
   </section>
 
   <!-- ============================= FAQ ============================= -->
   <section class="section faq-section" id="faq" hidden>
     <div class="container faq-container">
-      <div class="section-heading">
-        <p class="eyebrow">FAQs</p>
-        <h2>Frequently asked questions</h2>
+      <div class="section-heading reveal">
+        <p class="eyebrow">FAQs &amp; Policies</p>
+        <h2>Good to know</h2>
       </div>
       <div id="faq-list" class="faq-list"></div>
-      <p class="faq-cta">Can't find what you're looking for? <a href="#contact">Get in touch directly.</a></p>
+      <p class="faq-cta">Have another question? <a href="#contact" data-scroll="#contact">Get in touch directly.</a></p>
     </div>
   </section>
 
-  <!-- ============================= CONTACT ============================= -->
+  <!-- ============================= CONTACT / BOOKING ============================= -->
   <section class="section contact-section" id="contact">
     <div class="container contact-grid">
-      <div class="contact-intro">
-        <p class="eyebrow">Contact &amp; Booking Enquiry</p>
+      <div class="contact-intro reveal">
+        <p class="eyebrow">Contact &amp; Booking</p>
         <h2>Plan your stay</h2>
-        <p>Send us your dates and details, and we'll get back to you directly.</p>
+        <p>Send a booking request with your dates, or a general message — either way it reaches us directly on WhatsApp. We'll confirm availability, the total price and how to secure your dates.</p>
 
         <div class="contact-methods" id="contact-methods"></div>
 
-        <p class="contact-note">Availability and booking are confirmed directly by the property.</p>
+        <div class="config-callout" id="contact-config-note" hidden>
+          <strong>Almost ready.</strong>
+          <span>Direct WhatsApp enquiries switch on the moment the property's WhatsApp number is added to the site configuration. Until then, please use the Google Maps listing to get in touch.</span>
+        </div>
+
+        <p class="contact-note">This is a direct enquiry service. Your stay is confirmed only after the property confirms availability and booking details — no payment is taken here.</p>
       </div>
 
-      <form class="contact-form" id="contact-form" novalidate>
-        <div class="field">
-          <label for="cf-name">Full name</label>
-          <input type="text" id="cf-name" name="name" autocomplete="name" required />
-          <span class="field-error" data-error-for="cf-name" role="alert"></span>
+      <div class="form-panel reveal">
+        <!-- Tabs -->
+        <div class="form-tabs" role="tablist" aria-label="Choose enquiry type">
+          <button class="form-tab is-active" id="tab-booking" role="tab" aria-selected="true" aria-controls="panel-booking" type="button">Request a Booking</button>
+          <button class="form-tab" id="tab-message" role="tab" aria-selected="false" aria-controls="panel-message" type="button">Send a Message</button>
         </div>
 
-        <div class="field">
-          <label for="cf-phone">Phone number</label>
-          <input type="tel" id="cf-phone" name="phone" autocomplete="tel" required />
-          <span class="field-error" data-error-for="cf-phone" role="alert"></span>
-        </div>
-
-        <div class="field-row">
+        <!-- ---------- BOOKING REQUEST FORM ---------- -->
+        <form class="stay-form" id="booking-form" role="tabpanel" aria-labelledby="tab-booking" novalidate>
           <div class="field">
-            <label for="cf-checkin">Check-in</label>
-            <input type="date" id="cf-checkin" name="checkin" required />
-            <span class="field-error" data-error-for="cf-checkin" role="alert"></span>
+            <label for="bk-name">Full name <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="bk-name" name="name" autocomplete="name" required />
+            <span class="field-error" data-error-for="bk-name" role="alert"></span>
           </div>
+
           <div class="field">
-            <label for="cf-checkout">Check-out</label>
-            <input type="date" id="cf-checkout" name="checkout" required />
-            <span class="field-error" data-error-for="cf-checkout" role="alert"></span>
+            <label for="bk-phone">Phone number <span class="req" aria-hidden="true">*</span></label>
+            <input type="tel" id="bk-phone" name="phone" autocomplete="tel" inputmode="tel" required />
+            <span class="field-error" data-error-for="bk-phone" role="alert"></span>
           </div>
-        </div>
 
-        <div class="field">
-          <label for="cf-guests">Number of guests</label>
-          <input type="number" id="cf-guests" name="guests" min="1" max="20" value="2" required />
-          <span class="field-error" data-error-for="cf-guests" role="alert"></span>
-        </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="bk-checkin">Check-in <span class="req" aria-hidden="true">*</span></label>
+              <input type="date" id="bk-checkin" name="checkin" required />
+              <span class="field-error" data-error-for="bk-checkin" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="bk-checkout">Check-out <span class="req" aria-hidden="true">*</span></label>
+              <input type="date" id="bk-checkout" name="checkout" required />
+              <span class="field-error" data-error-for="bk-checkout" role="alert"></span>
+            </div>
+          </div>
 
-        <div class="field">
-          <label for="cf-room">Room (optional)</label>
-          <select id="cf-room" name="room">
-            <option value="">No preference</option>
-          </select>
-        </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="bk-adults">Adults <span class="req" aria-hidden="true">*</span></label>
+              <input type="number" id="bk-adults" name="adults" min="1" max="20" value="2" inputmode="numeric" required />
+              <span class="field-error" data-error-for="bk-adults" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="bk-children">Children</label>
+              <input type="number" id="bk-children" name="children" min="0" max="20" value="0" inputmode="numeric" />
+            </div>
+          </div>
 
-        <div class="field">
-          <label for="cf-message">Message (optional)</label>
-          <textarea id="cf-message" name="message" rows="4"></textarea>
-        </div>
+          <!-- Accommodation preference only appears if real room options are configured -->
+          <div class="field" id="bk-room-field" hidden>
+            <label for="bk-room">Accommodation preference</label>
+            <select id="bk-room" name="room">
+              <option value="">No preference</option>
+            </select>
+          </div>
 
-        <button type="submit" class="btn btn-primary btn-block" id="contact-submit">Send Enquiry</button>
-        <p class="form-status" id="contact-form-status" role="status" aria-live="polite"></p>
-        <p class="form-disabled-note" id="contact-form-disabled-note" hidden>Direct enquiry sending will be enabled here once the property's contact details are confirmed. In the meantime, please check back soon.</p>
-      </form>
+          <!-- Rooms count only appears if room options are configured -->
+          <div class="field" id="bk-rooms-field" hidden>
+            <label for="bk-rooms">Number of rooms</label>
+            <input type="number" id="bk-rooms" name="rooms" min="1" max="10" value="1" inputmode="numeric" />
+          </div>
+
+          <div class="field">
+            <label for="bk-requests">Special requests</label>
+            <textarea id="bk-requests" name="requests" rows="3" placeholder="Celebration setup, early check-in, extra bed…"></textarea>
+          </div>
+
+          <!-- Live summary -->
+          <div class="booking-summary" id="booking-summary" hidden aria-live="polite">
+            <p class="booking-summary-title">Your request</p>
+            <dl id="booking-summary-list"></dl>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" id="booking-submit">Send Booking Request on WhatsApp</button>
+          <p class="form-hint">This is a booking request. Your stay is confirmed only after the property confirms availability and booking details.</p>
+          <p class="form-status" id="booking-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <!-- ---------- CONTACT / MESSAGE FORM ---------- -->
+        <form class="stay-form" id="contact-form" role="tabpanel" aria-labelledby="tab-message" novalidate hidden>
+          <div class="field">
+            <label for="cf-name">Full name <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="cf-name" name="name" autocomplete="name" required />
+            <span class="field-error" data-error-for="cf-name" role="alert"></span>
+          </div>
+
+          <div class="field">
+            <label for="cf-phone">Phone number <span class="req" aria-hidden="true">*</span></label>
+            <input type="tel" id="cf-phone" name="phone" autocomplete="tel" inputmode="tel" required />
+            <span class="field-error" data-error-for="cf-phone" role="alert"></span>
+          </div>
+
+          <div class="field">
+            <label for="cf-email">Email <span class="opt">(optional)</span></label>
+            <input type="email" id="cf-email" name="email" autocomplete="email" />
+            <span class="field-error" data-error-for="cf-email" role="alert"></span>
+          </div>
+
+          <div class="field">
+            <label for="cf-subject">Enquiry subject <span class="opt">(optional)</span></label>
+            <input type="text" id="cf-subject" name="subject" />
+          </div>
+
+          <div class="field">
+            <label for="cf-message">Message <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="cf-message" name="message" rows="5" required></textarea>
+            <span class="field-error" data-error-for="cf-message" role="alert"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" id="contact-submit">Continue to WhatsApp</button>
+          <p class="form-hint">WhatsApp will open with your message. Tap Send to share it with our team.</p>
+          <p class="form-status" id="contact-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
     </div>
   </section>
 
@@ -304,27 +393,49 @@
     <div class="footer-brand">
       <span class="wordmark-main">Brilliant Homestay</span>
       <span class="wordmark-sub">Guwahati, Assam</span>
+      <p class="footer-blurb">A warm, boutique homestay in Guwahati — freshly styled rooms and celebration setups on request.</p>
     </div>
 
     <nav class="footer-nav" aria-label="Footer">
-      <a href="#home">Home</a>
-      <a href="#stay">Stay</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#location">Location</a>
-      <a href="#contact">Contact</a>
+      <a href="#home" data-scroll="#home">Home</a>
+      <a href="#stay" data-scroll="#stay">Stay</a>
+      <a href="#gallery" data-scroll="#gallery">Gallery</a>
+      <a href="#location" data-scroll="#location">Location</a>
+      <a href="#contact" data-scroll="#contact">Contact</a>
     </nav>
 
-    <div class="footer-contact" id="footer-contact"></div>
+    <div class="footer-col">
+      <h3 class="footer-col-title">Contact</h3>
+      <div class="footer-contact" id="footer-contact"></div>
+    </div>
 
-    <div class="footer-policies" id="footer-policies"></div>
+    <div class="footer-col">
+      <h3 class="footer-col-title">More</h3>
+      <div class="footer-policies" id="footer-policies"></div>
+    </div>
   </div>
   <div class="container footer-bottom">
     <p>&copy; <span id="footer-year"></span> Brilliant Homestay. All rights reserved.</p>
   </div>
 </footer>
 
-<!-- ============================= STICKY MOBILE BAR ============================= -->
-<div class="sticky-bar" id="sticky-bar" hidden></div>
+<!-- ============================= FLOATING WHATSAPP ============================= -->
+<a class="wa-fab" id="wa-fab" href="#contact" data-cta="whatsapp" data-cta-slot="fab" aria-label="Enquire on WhatsApp" hidden>
+  <svg viewBox="0 0 32 32" aria-hidden="true" width="26" height="26"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.3.7 4.5 1.9 6.4L4 29l7.9-1.8c1.8 1 3.9 1.5 6.1 1.5 6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 18 3h-2zm.1 2.4h1.8c5.3 0 9.6 4.2 9.6 9.5 0 5.3-4.3 9.5-9.6 9.5-2 0-3.9-.6-5.5-1.6l-.4-.3-4.1 1 1-3.9-.3-.4a9.3 9.3 0 0 1-1.7-5.4c0-5.2 4-9.4 9.2-9.4zm-3.6 4.8c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.2 5 4.4 2.5 1 3 .8 3.6.8.6-.1 1.8-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.7-.4-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-1 1.2-.2.2-.3.2-.6.1-.4-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.2-.2.2-.3.3-.5.1-.2.1-.4 0-.5 0-.1-.7-1.8-1-2.4-.2-.5-.5-.5-.7-.5h-.3z"/></svg>
+  <span class="wa-fab-label">WhatsApp</span>
+</a>
+
+<!-- ============================= MOBILE BOTTOM BAR ============================= -->
+<div class="mobile-bar" id="mobile-bar" hidden>
+  <a href="#contact" class="mobile-bar-plan" data-scroll="#contact">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>
+    Plan Your Stay
+  </a>
+  <a href="#contact" class="mobile-bar-wa" data-cta="whatsapp" data-cta-slot="mobile-bar">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-3.9-6.9M13 8.5c.3 1.5 1.5 2.7 3 3M8.5 9.5c.2 3.5 3 6.3 6.5 6.5"/><path d="M3 21l1.5-4A8 8 0 1 1 8 20.5L3 21z"/></svg>
+    WhatsApp
+  </a>
+</div>
 
 <script src="js/config.js"></script>
 <script src="js/script.js"></script>
