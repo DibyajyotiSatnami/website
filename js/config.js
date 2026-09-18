@@ -230,7 +230,7 @@ const SITE_CONFIG = {
   //    your booking terms.
   // ==========================================================================
   faqs: [
-    { id: "check-in-out", question: "What are the check-in and check-out times?", answer: null },
+    { id: "check-in-out", question: "What are the check-in and check-out times?", answer: "Check-in is from 2:00 PM and check-out is by 11:00 AM. If you need an early check-in or late check-out, let us know in your enquiry and we'll do our best to accommodate, subject to availability." },
     { id: "booking",      question: "How do I confirm a booking?",               answer: "Send us a booking request through this website (or WhatsApp us directly). We'll reply to confirm availability, share the total price, and tell you how to secure the dates. Your stay is confirmed only once we confirm it back to you." },
     { id: "celebrations", question: "Can you arrange celebration or occasion setups?", answer: "Yes — decoration setups (such as birthday arrangements) can be arranged on request. Mention it in your enquiry and we'll share the options and any charges." },
     { id: "parking",      question: "Is parking available?",                     answer: null },
