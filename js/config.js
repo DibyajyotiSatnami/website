@@ -90,7 +90,7 @@ const SITE_CONFIG = {
 
     // TODO (owner): add the full, verified postal address exactly as on your
     // Google listing. Stays hidden from the page until filled in.
-    fullAddress: null,
+    fullAddress: "Ganeshguri, GS Road, Guwahati, Assam – 781005",
 
     // TODO (owner): only add landmarks with a distance/time you have personally
     // confirmed. Do NOT estimate travel times.
